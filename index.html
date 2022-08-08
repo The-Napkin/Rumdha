@@ -35,6 +35,7 @@
   </style>
 </head>
 
+
 <body class="minimal">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
@@ -48,7 +49,8 @@
             <div class="text-content">
               <h1><br>
                 <span id="typed-strings">
-                  <span>"Alkohol neje odpoveď. Alkohol je otázka a odpoveď je: "Áno."" <br>- Rumdha, 2021</span>
+                  <span id="kvotacie"></span>
+                  
                 </span>
                 <span id="typed"></span>
               </h1>
@@ -66,6 +68,12 @@
      movingBackgroundImage();
   });
 </script>
+<script>
+  var quotes= ['"Alkohol nieje odpoveď. Alkohol je otázka a odpoveď je: "Áno."" <br> - Rumdha, 2021', '"Piť, či nepiť?" <br> - Rumdha, 2021', '"Kde som tam sa pije, alebo kde sa pije tam som?" <br> - Rumdha, 2021', '"Alkoholom si požičiavaš radosť z ďalšieho dňa." <br> - Rumdha, 2021'];
+  var q = quotes[Math.floor(Math.random()*quotes.length)];
+  document.getElementById("kvotacie").innerHTML=q;
+</script>
+
 
 
 <script type="text/javascript" src="./main.70a66962.js"></script></body>
